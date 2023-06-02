@@ -1,8 +1,6 @@
 # ByteWise
 AI-powered Website Builder: Empowering non-coders to effortlessly create stunning websites using GPT 3.5 AI and NodeJS with Express.
 
-# AI-powered Website Builder
-
 This repository contains an AI-powered website builder application that aims to empower non-coders to effortlessly create stunning websites. The project utilizes the Ada text model and follows a specific flow to generate website ideas and options based on user prompts.
 
 ## Flow
