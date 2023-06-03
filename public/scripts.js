@@ -60,10 +60,10 @@ form_3_back_btn.addEventListener("click", function(){
 	form_3_progessbar.classList.remove("active");
 });
 
-btn_done.addEventListener("click", function(){
-	modal_wrapper.classList.add("active");
-})
+// btn_done.addEventListener("click", function(){
+// 	modal_wrapper.classList.add("active");
+// })
 
-shadow.addEventListener("click", function(){
-	modal_wrapper.classList.remove("active");
-})
+// shadow.addEventListener("click", function(){
+// 	modal_wrapper.classList.remove("active");
+// })

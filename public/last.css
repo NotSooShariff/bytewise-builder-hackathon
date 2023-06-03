@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.nav_bar{
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background-color: #0F1C70;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.create{
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+
+.three_box{
+    margin-top:20px;
+    height: 70px;
+}
+
+input[type=button] {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    width: 163px;
+    height: 34px;
+    left: 449px;
+    top: 24px;
+  }
+
+  input[type=reset] {
+    background-color: #00CC99;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    width: 163px;
+    height: 34px;
+    left: 449px;
+    top: 24px;
+  }
+
+  input[type=submit] {
+    background-color: #D99AC5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    width: 163px;
+    height: 34px;
+    left: 449px;
+    top: 24px;
+  }
+
+.portals{
+    background-color: #2B2B2B;
+    line-height: 45px;
+}
+
+h4{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    color: white;
+}
+
+.icon{
+    display: flex;
+}
+
+img{
+    margin-top: 10px;
+    margin-left:15px;
+}
+
+.side_black_bar{
+    background-color: #1D1E22;
+    width: 424px;
+    /* height: 150%; */
+    left: 0px;
+    top: 90px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* .portals_1{
+    background-color: #1D1E22;
+    position: absolute;
+    width: 424px;
+    height: 159px;
+    left: 1px;
+    top: 145px;
+} */
+
+/* input{
+    font-size: 1rem;
+    direction: ltr; 
+    /* text-indent: 10px; */
+    /* padding-top: 0;
+    padding-left: 0; */
+   /* line-height: 1em;  
+}*/
+
+/* input[type=textarea]{
+     padding: 10px 15px; 
+    box-sizing: border-box;
+    border: #1D1E22;
+    width: 424px;
+    height: 200px;
+    left: 0px;
+    top: 145px;
+    background: #1D1E22;
+    color: white;
+} */
+
+.html_portal{
+    height: 314.5px;
+}
+
+.css_portal{
+    height:314px;
+}
+
+
+textarea {
+    margin: 0;
+    width: 424px;
+    height: 100%; 
+    background-color: #1D1E22;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    resize: none;
+   }
+

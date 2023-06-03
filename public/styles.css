@@ -10,13 +10,15 @@
     src: url(ppb.ttf) format("truetype");
 }
 
+
+/* chaged next button hover color */
 :root{
 	--primary: #0F1C70;
 	--secondary: #bfc0c0;
 	--white: #fff;
 	--text-clr: #5b6475;
 	--header-clr: #25273d;
-	--next-btn-hover: #8577d2;
+	--next-btn-hover: #00cc99;
 	--back-btn-hover: #8b8c8c;
 }
 
@@ -34,8 +36,6 @@ body{
 	color: var(--text-clr);
 	font-size: 16px;
 	position: relative;
-    
-
 }
 
 .wrapper{
@@ -111,15 +111,20 @@ body{
 	margin-bottom: 35px;
 }
 
+
+
+/* changed h2 color */
 .wrapper .form_wrap h2{
-	color: var(--header-clr);
+	color: var(--primary);
 	text-align: center;
 	
 	margin-bottom: 20px;
 }
 
+
+/* Changed width to 500px */
 .wrapper .form_wrap .input_wrap{
-	width: 350px;
+	width: 500px;
 	max-width: 100%;
 	margin: 0 auto 20px;
 }
@@ -162,10 +167,13 @@ body{
 	justify-content: flex-end;
 }
 
+
+
+/* changed button background color */
 .wrapper .btns_wrap .common_btns button{
 	border: 0;
 	padding: 12px 15px;
-	background: var(--primary);
+	background: #00cc99;
 	color: var(--white);
 	width: 135px;
 	justify-content: center;
@@ -176,6 +184,9 @@ body{
 	transition: 0.5s ease;
 	cursor: pointer;
 }
+
+
+
 
 .wrapper .btns_wrap .common_btns button.btn_back{
 	background: var(--secondary);
@@ -191,9 +202,12 @@ body{
 	margin-right: 10px;
 }
 
+
+/* added opacity tag for hover */
 .wrapper .btns_wrap .common_btns button.btn_next:hover,
 .wrapper .btns_wrap .common_btns button.btn_done:hover{
 	background: var(--next-btn-hover);
+    opacity:65%
 }
 
 .wrapper .btns_wrap .common_btns button.btn_back:hover{
@@ -260,14 +274,16 @@ body{
 }
 
 
-
+/* added color for font */
 .test2{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    color: #0F1C70;
 }
 
 
+/* added height tag */
 .test{
     display: inline-flex;
     width: 260px;
@@ -279,6 +295,7 @@ body{
     border-radius: 5%;
     padding-left:1rem;
     margin-bottom: 1rem;
+    height: 75px;
 }
 
 .outer1{
@@ -305,70 +322,32 @@ body{
 
   .form_container{
     display: flex;
-
     justify-content: space-around;
   }
 
+/* Deleted lots of commetned sueless lines */
 
-/*   
-  *:after,
-  *:before{
-      box-sizing: border-box;
-  }
 
-input[type="radio"]{
-    display: none;
+/* ADDED NEW CLASS CSS STATEMENTS */
+.final{
+    display: flex;
+    flex-direction: column;
+    width:100%;    
 }
 
-label{
-    display: block;
-    cursor: pointer;
-    font-weight: 500;
 
-}
-
-label span{
-    display: inline-flex;
-    padding-bottom: 5px;
-    border-radius: 31px;
-    transition: .25s ease;
-}
-
-label span:hover,
-input[type="radio"]:checked + span{
-    background-color: #d6d6e5;
-}
-
-label span:before{
-    content: "";
-    background-color: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    transition: .25s ease;
-    box-shadow:  inset 0 0 0 2px #00CC99;
-    
-}
-
-input[type="radio"]:checked + span:before{
-    box-shadow: inset 0 0 0 2px #00CC99;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    transition: .25s ease;
-    background: url("Check.png"); 
-	background-repeat: no-repeat;
-    background-color: #00CC99;
-	background-position:center center;
-	background-size:50px 50px;
-} */
-
+/* Added color tag */
 .aaa{
     font-family: prodsansbold;
     font-size: 120%;
+    color: #0F1C70;
 }
+
+
+/* added colortag */
 .bbb{
     font-size: 91%;
+    color: #0F1C70;
 }
 
 .colors{
@@ -378,242 +357,405 @@ input[type="radio"]:checked + span:before{
     justify-content: space-between;
 }
 
+/* changed bg color */
 .c1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #C3C3E6;
 }
 
+
+/* changed bg color */
 .c2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D1C8E1;
 }
 
+
+
+/* changed bg color */
 .c3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #BBA0CA;
 }
 
+
+/* changed bg color */
 .c4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #B370B0;
 }
 
+
+
+/* changed bg color */
 .c5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #87255B;
 }
 
+
+
+/* changed bg color */
 .d1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #FF7477;
 }
 
+
+
+/* changed bg color */
 .d2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #E69597;
 }
 
+
+
+/* changed bg color */
 .d3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #CEB5B7;
 }
 
+
+
+/* changed bg color */
 .d4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #B5D6D6;
 }
 
+
+
+/* changed bg color */
 .d5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #9CF6F6;
 }
 
+
+
+/* changed bg color */
 .e1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #545F66;
 }
 
+
+
+/* changed bg color */
 .e2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #829399;
 }
 
+
+
+/* changed bg color */
 .e3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D0F4EA;
 }
 
+
+
+/* changed bg color */
 .e4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #E8FCC2;
 }
 
+
+
+/* changed bg color */
 .e5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #B1CC74;
 }
 
+
+
+/* changed bg color */
 .f1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #031926;
 }
 
+
+
+/* changed bg color */
 .f2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #468189;
 }
 
+
+
+/* changed bg color */
 .f3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #77ACA2;
 }
 
+
+
+/* changed bg color */
 .f4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #9DBEBB;
 }
 
+
+
+/* changed bg color */
 .f5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #F4E9CD;
 }
 
+
+
+/* changed bg color */
 .g1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #1C77C3;
 }
 
+
+
+/* changed bg color */
 .g2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #39A9DB;
 }
 
+
+
+/* changed bg color */
 .g3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #40BCD8;
 }
 
+
+
+/* changed bg color */
 .g4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #F39237;
 }
 
+
+
+/* changed bg color */
 .g5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D63230;
 }
 
+
+
+/* changed bg color */
 .h1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #B37BA4;
 }
 
+
+
+/* changed bg color */
 .h2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D99AC5;
 }
 
+
+
+/* changed bg color */
 .h3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #DCCDE8;
 }
 
+
+
+/* changed bg color */
 .h4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #14BDEB;
 }
 
+
+
+/* changed bg color */
 .h5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #00100B;
 }
 
+
+
+/* changed bg color */
 .i1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #DD614A;
 }
 
+
+
+/* changed bg color */
 .i2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #F48668;
 }
 
+
+
+/* changed bg color */
 .i3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #F2F3AE;
 }
 
+
+
+/* changed bg color */
 .i4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #EDD382;
 }
 
+
+
+/* changed bg color */
 .i5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #4F6D7A;
 }
 
+
+
+/* changed bg color */
 .j1{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D3FAD6;
 }
 
+
+
+/* changed bg color */
 .j2{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #D1EFB5;
 }
 
+
+
+/* changed bg color */
 .j3{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #EDEBA0;
 }
 
+
+
+/* changed bg color */
 .j4{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #C3C48D;
 }
 
+
+
+/* changed bg color */
 .j5{
     width: 20px;
     height: 20px;
-    background-color: #0F1C70;
+    background-color: #928C6F;
+}
+
+
+
+
+/* All code below is newly added code */
+
+
+.ans{
+    font-size: 105%;
+    border-radius: 3%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-top: 10px;
+    
+    width:550px;
+    box-shadow: 5px 5px 5px #888888;
+    resize: none;
+    color: #0F1C70;
+    opacity: 37%;
+}
+
+.brand{
+    width: 550px;
+    border-radius: 3%;
+    padding: 10px 0 10px 1rem;
+    font-size: 105%;
+    border-color: gray;
+    box-shadow: 5px 5px 5px #888888;
+
+}
+
+::placeholder{
+    color: #0F1C70;
+    opacity: 37%;
+}
+
+.words{
+    font-size: 105%;
+    color: #B1B1B1;
+}
+.words2{
+    font-size: 105%;
+    padding-bottom: 30px;
+    color: #B1B1B1;
+    width: 650px;
+    display: block;
 }

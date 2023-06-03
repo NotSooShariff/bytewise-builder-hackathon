@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@font-face {
+    font-family: productsans;
+    src: url(pp.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: prodsansbold;
+    src: url(ppb.ttf) format("truetype");
+}
+
 *{
     box-sizing: border-box; 
 }
-.chaljamc{
-    z-index: 5;
-}
+
+
 body{
-    font: normal 16px/1.5 Helvetica, Arial, sans-serif;
-    font-family: 'Jost*','Segoe UI','Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    /* font: normal 16px/1.5 Helvetica, Arial, sans-serif;
+    font-family: 'Jost*','Segoe UI','Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; */
+    font-family: productsans;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -98,6 +110,7 @@ a:link {
     text-align: center;
     width: 100%;
     position: relative;
+    bottom: 70px;
 }
 
 #intro h1 {
