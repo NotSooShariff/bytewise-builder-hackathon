@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codebase.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i>  HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            
+            <label><i class="fa-brands fa-css3-alt"></i>  CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            
+            <label><i class="fa-solid fa-code"></i>  AI JSON</label>
+            <div id="js-code"><pre id="output"></pre></div>
+        </div>
+        
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>  Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function run(){
+            let htmlCode =document.getElementById("html-code").value;
+            let cssCode =document.getElementById("css-code").value;
+            let output = document.getElementById("output");
+            output.contentDocument.body.innerHTML=htmlCode+"<style>"+cssCode+"</style>";
+        }
+    </script>
+<!-- 
+    <div class="container">
+        <div class="side_black_bar">
+            <div class="portals">
+                <div class="icon">
+                    <img src="html.png" alt="html_pic" width="25" height="25">
+                    <span><h4>HTML5</h4></span>
+                </div>
+                
+            </div>
+
+            <div class="html_portal">
+                <textarea id="story" rows="10" cols="33"> </textarea>
+            </div>
+
+            <div class="portals"> 
+                <div class="icon">
+                    <img src="css3.png" alt="css_pic" width="25" height="25">
+                    <span><h4>CSS3</h4></span>
+                </div>
+            </div>
+
+            <div class="css_portal">
+                <textarea id="story" rows="10" cols="33"></textarea>
+            </div>
+
+        </div>
+    
+        <div class="website_screen">
+    
+        </div>
+    </div>
+     -->
+     
+
+     <script>
+       // Retrieve the output value from the query parameter and display it
+       const queryString = window.location.search;
+       const urlParams = new URLSearchParams(queryString);
+       const output = urlParams.get('output');
+       document.getElementById('output').textContent = output;
+     </script>
+    <!-- <div id="response"></div>
+
+    <script>
+      // Retrieve the response from the URL query parameter
+      const response = decodeURIComponent(window.location.search.substr(1).split('=')[1]);
+      document.getElementById('response').innerText = response;
+    </script> -->
+</body>
+</html>

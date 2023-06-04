@@ -312,46 +312,45 @@
 
         <!-- Added width inside style tag -->
 		<div class="form_3 data_info" style="display: none; width: 500px;"> 
-
-
 			<h2>Tell us more about you</h2>
-			<form>
-
+			
 
                 <!-- changed class name from form_container to final -->
 				<div class="final">
-
-
 					<div class="input_wrap">
-
                         <!-- Made changes to text  input statement -->
 						<input type="text" name="brand" class="brand" id="company" placeholder="Brand Keyword">
-					
-                    
-                    
                     </div>
-
-
                     <!-- Added next line creating new div -->
-                    <div class="input_wrap"><span class="words">Add any keywords that may be related to your idea or business.</span> </div>
+                <div class="input_wrap"><span class="words">Add any keywords that may be related to your idea or business.</span> </div>
+
+            <form action="/submit" method="post">
+                    
 
 					<div class="input_wrap">
 
                         <!-- added textarea and removed label, input text -->
-						<textarea id="w3review" name="w3review" rows="7" cols="53" class="ans" placeholder="Business Description... (Optional)"></textarea>
+						<textarea id="w3review" name="input" rows="7" cols="53" class="ans" placeholder="Business Description... (Optional)"></textarea>
 					
                     
                     </div>
 
 
                     <!-- Added new div -->
-                    <div class="input_wrap"><span class="words2">A short description in a few sentences that you might want on your website.</span> </div>
+                    <div class="input_wrap"><span class="words2"><a href="/lastpage.html">A short description in a few sentences that you might want on your website</a>.</span> </div>
 				
-                
-                
+                    <div class="btns_wrap">
+                        <div class="common_btns form_3_btns" style="display: none;">
+                            <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                            <button type="submit" href="/lastpage" class="btn_done">Done</button>
+                        </div>
+                    </div>
+                    <!-- <input type="submit" value="Submit"> -->
                 </div>
 			</form>
 		</div>
+
+
 	</div>
 
 
@@ -363,13 +362,12 @@
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
 			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
 		</div>
-		<div class="common_btns form_3_btns" style="display: none;">
+		<!-- <div class="common_btns form_3_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
-            <button type="button" class="btn_done">Done</button>
-        </div>
+            <button type="button" href="/lastpage" class="btn_done">Done</button>
+        </div> -->
 	</div>
 </div>
-
 <!-- <div class="modal_wrapper">
 	<div class="shadow"></div>
 	<div class="success_wrap">
@@ -379,6 +377,11 @@
 </div> -->
 
 <script type="text/javascript" src="scripts.js"></script>
-
+<script>
+    // Store the data in session storage
+    const data = sessionStorage.getItem('data');
+    sessionStorage.setItem('data', data);
+  </script>
+  
 </body>
 </html>
