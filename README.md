@@ -34,9 +34,9 @@ To run the application locally, follow these steps:
 
 Please note that the application requires an active internet connection to access the Ada text model API.
 
-## Contribution
 
-Contributions to this project are welcome! If you have any ideas, suggestions, or bug reports, feel free to open an issue or submit a pull request. Let's collaborate and improve the AI-powered website builder together.
+
+
 
 ## License
 
