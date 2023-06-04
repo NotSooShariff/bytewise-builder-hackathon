@@ -48,7 +48,10 @@ textarea{
     font-family: 'Inconsolata', monospace;
     scroll-behavior: smooth;
 }
+
+
 #js-code{
+    /* max-width: 40%; */
     width: 100%;
     height: 28%;
     background: #1f1f1f;
@@ -58,6 +61,7 @@ textarea{
     outline:0;
     font-size: 18px;
     font-family: 'Inconsolata', monospace;
+    overflow: scroll;
 }
 iframe{
     width: 100%;

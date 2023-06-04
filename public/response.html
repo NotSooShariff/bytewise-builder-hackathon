@@ -68,14 +68,34 @@
     </div>
      -->
      
-
+     <script>
+        // Retrieve the output value from the query parameter and display it in the <pre> tag
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const output = urlParams.get('output');
+      
+        // Add line breaks every few words in the JSON output
+        const wordsPerLine = 17; // Adjust the number of words per line as needed
+        const lines = output.split(' ').reduce((result, word, index) => {
+          if (index % wordsPerLine === 0) {
+            result.push([]);
+          }
+          result[Math.floor(index / wordsPerLine)].push(word);
+          return result;
+        }, []).map(line => line.join(' '));
+      
+        // Set the formatted output with line breaks in the <pre> tag
+        document.getElementById('output').textContent = lines.join('\n');
+      </script>
+      
+<!-- 
      <script>
        // Retrieve the output value from the query parameter and display it
        const queryString = window.location.search;
        const urlParams = new URLSearchParams(queryString);
        const output = urlParams.get('output');
        document.getElementById('output').textContent = output;
-     </script>
+     </script> -->
     <!-- <div id="response"></div>
 
     <script>
