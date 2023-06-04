@@ -11,27 +11,169 @@
     <div class="container">
         <div class="left">
             <label><i class="fa-brands fa-html5"></i>  HTML</label>
-            <textarea id="html-code" onkeyup="run()"></textarea>
+            <textarea id="html-code" onkeyup="run()">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav&gt;
+      &lt;div class=&quot;logo&quot;&gt;SEND&lt;/div&gt;
+      &lt;div class=&quot;nav-items&quot;&gt;
+        &lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt; &lt;a href=&quot;/&quot;&gt;About&lt;/a&gt; &lt;a href=&quot;/&quot;&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;section class=&quot;hero&quot;&gt;
+      &lt;div class=&quot;hero-container&quot;&gt;
+        &lt;div class=&quot;column-left&quot;&gt;
+          &lt;h1&gt;Send Unlimited Messages&lt;/h1&gt;
+          &lt;p&gt;
+            No contracts or unwanted fees. Exclusive offer for new customers
+            only.
+          &lt;/p&gt;
+          &lt;button&gt;Get Started&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column-right&quot;&gt;
+          &lt;img
+            src=&quot;./image-1.svg&quot;
+            alt=&quot;illustration
+        &quot;
+            class=&quot;hero-image&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                
+                
+  
+            </textarea>
             
             <label><i class="fa-brands fa-css3-alt"></i>  CSS</label>
-            <textarea id="css-code" onkeyup="run()"></textarea>
-            
+            <textarea id="css-code" onkeyup="run()">
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    }
+    
+    nav {
+      height: 80px;
+      background: #fdcc04;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem calc((100vw - 1300px) / 2);
+    }
+    
+    .logo {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0 2rem;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 0 1.5rem;
+    }
+    
+    nav a:hover {
+      color: #fff;
+    }
+    
+    .hero {
+      background: #fdcc04;
+    }
+    
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 95vh;
+      padding: 3rem calc((100vw - 1300px) / 2);
+    }
+    
+    .column-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: #000;
+      padding: 0rem 2rem;
+    }
+    
+    .column-left h1 {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+    
+    .column-left p {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    
+    button {
+      padding: 1rem 3rem;
+      font-size: 1rem;
+      border: none;
+      color: #fdcc04;
+      background: #000;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+    
+    button:hover {
+      background: #fff;
+      color: #000;
+    }
+    
+    .column-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0rem 2rem;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: 100%;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+    }
+            </textarea>
+
             <label><i class="fa-solid fa-code"></i>  AI JSON</label>
             <div id="js-code"><pre id="output"></pre></div>
         </div>
         
         <div class="right">
             <label><i class="fa-solid fa-play"></i>  Output</label>
-            <iframe id="output"></iframe>
+            <iframe id="output-iframe"></iframe>
         </div>
+        
     </div>
 
     <script>
         function run(){
             let htmlCode =document.getElementById("html-code").value;
             let cssCode =document.getElementById("css-code").value;
-            let output = document.getElementById("output");
-            output.contentDocument.body.innerHTML=htmlCode+"<style>"+cssCode+"</style>";
+            let outputIframe = document.getElementById("output-iframe");
+            outputIframe.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>";
+
         }
     </script>
 <!-- 
@@ -75,7 +217,7 @@
         const output = urlParams.get('output');
       
         // Add line breaks every few words in the JSON output
-        const wordsPerLine = 17; // Adjust the number of words per line as needed
+        const wordsPerLine = 10; // Adjust the number of words per line as needed
         const lines = output.split(' ').reduce((result, word, index) => {
           if (index % wordsPerLine === 0) {
             result.push([]);
@@ -104,4 +246,4 @@
       document.getElementById('response').innerText = response;
     </script> -->
 </body>
-</html>
+</html> 
