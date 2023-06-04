@@ -730,7 +730,7 @@ a{
     padding-top: 1rem;
     margin-top: 10px;
     width:550px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
     resize: none;
     color: #0F1C70;
 
