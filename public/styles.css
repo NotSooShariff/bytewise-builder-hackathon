@@ -295,8 +295,8 @@ a{
     padding-left: 4px;
     align-content: space-around;
     flex-wrap: wrap;
-    box-shadow: 5px 5px 5px #888888;
-    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.1);
+    border-radius: 10px;
     padding-left:1rem;
     margin-bottom: 1rem;
     height: 75px;
@@ -725,25 +725,23 @@ a{
 
 .ans{
     font-size: 105%;
-    border-radius: 3%;
+    border-radius: 15px;
     padding-left: 1rem;
     padding-top: 1rem;
     margin-top: 10px;
-    
     width:550px;
     box-shadow: 5px 5px 5px #888888;
     resize: none;
     color: #0F1C70;
-    opacity: 37%;
+
 }
 
 .brand{
     width: 550px;
-    border-radius: 3%;
+    border-radius: 10px;
     padding: 10px 0 10px 1rem;
     font-size: 105%;
-    border-color: gray;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
 
 }
 
