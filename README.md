@@ -3,8 +3,7 @@ AI-powered Website Builder: Empowering non-coders to effortlessly create stunnin
 
 This repository contains an AI-powered website builder application that aims to empower non-coders to effortlessly create stunning websites. The project utilizes the Ada text model and follows a specific flow to generate website ideas and options based on user prompts.
 
-## Disclaimer
-Please note that this project was built with a time constraint for a hackathon and is very slow in generating outputs due to not being time optimised and running the headless browser implementation locally. It is a work in progress and may have limitations and performance issues. To understand how the project works and monitor the progress, please check the console logs. The script may also be slow due to the usage of an older model of ChatGPT and the data scraping.
+> Disclaimer - Please note that this project was built with a time constraint for a hackathon and is very slow in generating outputs due to not being time optimised and running the headless browser implementation locally. It is a work in progress and may have limitations and performance issues. To understand how the project works and monitor the progress, please check the console logs. The script may also be slow due to the usage of an older model of ChatGPT and the data scraping.
 
 ## Overview
 The WebDev Prompts Chatbot is a web application that leverages OpenAI's ChatGPT model to generate responses to web development prompts. It provides an interactive platform for users to enter prompts related to web development and receive code-based responses. The application consists of a frontend component that collects user input and a backend component that utilizes a headless browser to interact with the ChatGPT model and generate the responses.
